@@ -81,7 +81,7 @@ class Forecasting(BaseTask):
                 raise ValueError(
                     '`refit_full=True` is only available when `cache_data=True`. Set `cache_data=True` to utilize `refit_full`.')
 
-        set_best_to_refit_full = kwargs.get('set_best_to_refit_full', True)
+        set_best_to_refit_full = kwargs.get('set_best_to_refit_full', False)
         if set_best_to_refit_full and not refit_full:
             raise ValueError(
                 '`set_best_to_refit_full=True` is only available when `refit_full=True`. Set `refit_full=True` to utilize `set_best_to_refit_full`.')
