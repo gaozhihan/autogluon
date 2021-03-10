@@ -7,9 +7,9 @@ test_data = dataset.test
 
 prediction_length = dataset.metadata.prediction_length
 freq = dataset.metadata.freq
-index_column = None
-target_column = None
-time_column = None
+# index_column = None
+# target_column = None
+# time_column = None
 
 predictor = task.fit(train_data=train_data,
                      prediction_length=prediction_length,
